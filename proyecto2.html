@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Proyecto: Trifolios (Folleto) en Publisher - Alex Mejía</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f5f5f5;
+            color: #333;
+        }
+        .navbar {
+            background-color: #007bff;
+        }
+        .navbar-nav .nav-link {
+            color: #fff !important;
+        }
+        .project-section {
+            padding: 40px;
+            background-color: #ffffff;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            margin-top: 20px;
+        }
+        .project-img {
+            width: 30%;
+            height: auto;
+            margin-bottom: 20px;
+            transition: transform 0.3s ease;
+            cursor: pointer; /* Añadido para que se vea que es interactiva */
+        }
+        .project-img:hover {
+            transform: scale(1.05);
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Menú de Navegación -->
+    <nav class="navbar navbar-expand-lg navbar-dark">
+        <a class="navbar-brand" href="#">Info-Alex</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html">Inicio</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="proyectos.html">Proyectos</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="contacto.html">Contacto</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Sección de Proyecto 2 -->
+    <section class="project-section container">
+        <h2 class="text-center mb-4">Proyecto: Trifolios (Folleto) en Publisher</h2>
+        <p class="text-center">Este proyecto fue desarrollado utilizando Microsoft Publisher, y está basado en la creación de trifolios (folletos) informativos. Los trifolios (folletos) permiten organizar la información en un formato visual atractivo y plegable, ideal para la distribución de contenido en eventos o como material publicitario.</p>
+        
+        <div class="row">
+            <!-- Imagen 1 -->
+            <div class="col-md-12">
+                <img src="imagenes/p1.png" alt="Proceso de creación de trifolio (folleto) en Publisher" class="project-img mx-auto d-block" data-toggle="modal" data-target="#imageModal" data-img="imagenes/p1.png">
+                <p class="text-center">En esta imagen, se muestra el proceso para crear un trifolio (folleto) en Publisher. Primero, seleccionamos la opción "Nuevo", luego hacemos clic en "Integradas" y buscamos el apartado de "Folleto". Esta opción nos permite comenzar a diseñar un trifolio (folleto) desde plantillas preestablecidas.</p>
+            </div>
+            <!-- Imagen 2 -->
+            <div class="col-md-12">
+                <img src="imagenes/p2.png" alt="Interior del Trifolio (Folleto)" class="project-img mx-auto d-block" data-toggle="modal" data-target="#imageModal" data-img="imagenes/p2.png">
+                <p class="text-center">En la segunda imagen se muestra el interior del trifolio (folleto). Esta sección contiene el contenido principal dividido en varias columnas. Cada columna aborda un aspecto del tema principal, ofreciendo al lector una visión clara y estructurada de la información.</p>
+            </div>
+            <!-- Imagen 3 -->
+            <div class="col-md-12">
+                <img src="imagenes/p3.png" alt="Contraportada del Trifolio (Folleto)" class="project-img mx-auto d-block" data-toggle="modal" data-target="#imageModal" data-img="imagenes/p3.png">
+                <p class="text-center">La tercera imagen corresponde a la contraportada del trifolio (folleto). Aquí se incluye información adicional como los datos de contacto, así como un resumen o conclusión del tema tratado. Este diseño asegura que el trifolio (folleto) sea fácil de plegar y distribuir.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Instrucciones para Crear un Trifolio (Folleto) en Publisher -->
+    <section class="project-section container">
+        <h2 class="text-center mb-4">Cómo Crear un Trifolio (Folleto) en Publisher</h2>
+        <p>Para crear un trifolio (folleto) en Publisher, sigue estos pasos:</p>
+        <ul>
+            <li>Abre Publisher y selecciona la plantilla de trifolio (folleto) disponible en la sección "Publicaciones para imprimir".</li>
+            <li>Personaliza el trifolio (folleto) añadiendo tu propio contenido, imágenes y texto en las columnas correspondientes.</li>
+            <li>Ajusta los márgenes y el diseño para asegurar que todo el contenido esté bien distribuido y sea visualmente atractivo.</li>
+            <li>Guarda e imprime tu trifolio (folleto), o guárdalo como archivo PDF para su distribución digital.</li>
+        </ul>
+        <p>Con este proceso, puedes crear material publicitario o informativo de alta calidad, ideal para su distribución en eventos o campañas de marketing.</p>
+    </section>
+
+    <!-- Modal para mostrar la imagen ampliada -->
+    <div class="modal fade" id="imageModal" tabindex="-1" aria-labelledby="imageModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <img src="" class="img-fluid" id="modalImage" alt="Imagen ampliada" style="width: 100%; height: auto;">
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    
+    <!-- Script para cargar la imagen en el modal -->
+    <script>
+        $('#imageModal').on('show.bs.modal', function (event) {
+            var button = $(event.relatedTarget); // Botón que activó el modal
+            var imgSrc = button.data('img'); // Extraer la ruta de la imagen del atributo data-img
+            var modalImage = $('#modalImage'); // Imagen dentro del modal
+            modalImage.attr('src', imgSrc); // Cambiar el src de la imagen
+        });
+    </script>
+
+</body>
+</html>
